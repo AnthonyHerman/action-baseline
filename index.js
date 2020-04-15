@@ -3,6 +3,7 @@ const exec = require('@actions/exec');
 const fs = require('fs');
 const github = require('@actions/github');
 const _ = require('lodash');
+const azdev = require(`azure-devops-node-api`);
 
 const actionHelper = require('./action-helper');
 
