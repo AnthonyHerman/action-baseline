@@ -188,6 +188,7 @@ async function processReport(token, workSpace, plugins, currentRunnerID, issueTi
 
         let msg = actionHelper.createMessage(currentReport['site'], runnerInfo, runnerLink);
         const newIssue = await octokit.issues.create({
+            ...context.repo,
             owner: owner,
             repo: repo,
             title: issueTitle,
