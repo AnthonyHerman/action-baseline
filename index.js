@@ -94,7 +94,7 @@ async function processReport(token, workSpace, plugins, currentRunnerID, issueTi
         // Sometimes search API returns recently closed issue as an open issue
         for (let i = 0; i < issues.data.items.length; i++) {
             let issue = issues.data.items[i];
-            if(issue['state'] === 'open' && issue['user']['login'] === 'github-actions[bot]'){
+            if(issue['state'] === 'open' && issue['user']['login'] === 'CHR-SecBot'){
                 openIssue = issue;
                 break
             }
