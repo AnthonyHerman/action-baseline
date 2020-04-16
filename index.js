@@ -117,7 +117,7 @@ async function processReport(token, workSpace, plugins, currentRunnerID, issueTi
                 let lastBotComment;
                 let lastCommentIndex = comments['data'].length - 1;
                 for (let i = lastCommentIndex; i >= 0; i--) {
-                    if (comments['data'][i]['user']['login'] === 'github-actions[bot]') {
+                    if (comments['data'][i]['user']['login'] === 'CHR-SecBot') {
                         lastBotComment = comments['data'][i];
                         break;
                     }
